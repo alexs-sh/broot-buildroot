@@ -3,7 +3,7 @@
 MODE=""
 CONFIG_NAME=broot
 CONFIG_FILE=${CONFIG_NAME}.config
-CMD="./utils/test-pkg -p broot  -c broot.config"
+CMD="./utils/test-pkg -p $CONFIG_NAME  -c $CONFIG_FILE"
 
 if [ "$#" -ge 1 ]; then
    MODE=$1
