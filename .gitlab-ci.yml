@@ -49,11 +49,6 @@ raspberry-pi3-64:
   script:
     - ./build-img.sh raspberrypi3_64_defconfig
 
-orange-pi-zero2:
-  extends: .build-image
-  script:
-    - ./build-img.sh orangepi_zero2w_defconfig
-
 check-toolchains:
   extends: .build-image
   stage: build-package
